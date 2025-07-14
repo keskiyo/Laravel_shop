@@ -1,0 +1,175 @@
+div.input-group select.form-control {
+	height: 32px !important;
+}
+
+/* header */
+header{
+	position: relative;
+	padding: 0 2rem;
+  }
+  a:hover{
+	color:  #d66903;
+  }
+  a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.5rem;
+  }
+  li{
+	list-style: none;
+  }
+  
+  .header_nav_link.active a {
+	color: #cd8f55;
+	font-size: 1.8rem;
+  }
+
+  .navbar {
+	background-color: #fff; 
+	width: 100%;
+	height: 60px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  .admin_return{
+	text-decoration: none;
+	color: #212529;
+	font-size: 2rem;
+	font-style: bold;
+  }
+  
+  .navbar .links{
+	display: flex; 
+	gap: 2rem;
+  }
+  .navbar .toggle-btn{
+	color: black;
+	font-size: 2rem;
+	cursor: pointer;
+  }
+  
+  .dropdown-content{
+	position: absolute;
+	right: 2rem;
+	top: 60px;
+	height: 0;
+	width: 200px;
+	background:rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	overflow: hidden;
+	transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  	transform: translateX(-100%);
+  }
+  
+  .dropdown-content.open{
+	height: 100px;
+	z-index: 1000;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 0.7rem;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  
+  /* content */
+  html, body {
+	height: 100%; 
+	margin: 0; 
+  }
+  
+  body {
+	font-family: 'Montserrat', sans-serif;  
+  }
+  
+  #wrapper {
+	height: auto;
+	min-height: 100%; 
+  }
+  
+  .main_page_content {
+	word-wrap: break-word;
+	line-height: 1.5;
+  }
+  
+  .content {
+	margin-top: 20px; 
+	margin-bottom: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .content_wrapper {
+	display: flex;
+	flex-direction: column;
+	max-width: 1170px;
+	margin: 0 16px; 
+	width: 100%; 
+	height: 100%;
+  }
+  
+  .content_wrapper_header {
+	margin: 0 auto; 
+  }
+  
+  .content_wrapper_text {
+	text-align: justify;
+	font-size: 16px;
+  }
+  
+  .content_wrapper_items {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+  }
+
+  /* pagination styles */
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+  }
+  
+  .pagination a, .pagination span {
+	margin: 0 5px;
+	padding: 8px 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	text-decoration: none;
+	color: black;
+  }
+  
+  .pagination a:hover {
+	background-color: #f1f1f1;
+  }
+  
+  .pagination span {
+	background-color: #d3d3d3; 
+	color: black;
+	border: 1px solid #ccc; 
+  }
+
+
+  /* footer */
+.footer {
+	position: flex; 
+	bottom: 0; 
+	left: 0;
+	right: 0;
+	height: 50px; 
+	background-color: #ffffff;
+  }

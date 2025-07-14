@@ -1,0 +1,197 @@
+.container_zap{
+    display: flex;
+    flex: 1; 
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    height: 100%; 
+    min-height: calc(100vh - 80px - 200px);
+}
+
+.left-section {
+    width: 350px;
+}
+
+.card_content__h2{
+    font-size: 28px;
+}
+
+.div_img-product img{
+    width: 80%; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+.mid-section {
+    padding: 20px;
+    position: relative;
+    width: 400px;
+}
+
+.toggle-btn-content{
+    cursor: pointer;
+    color: #f7b37f;
+    text-decoration: underline;
+}
+
+.toggle-characteristics {
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px 0;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Изначально скрываем блок */
+.characteristics.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.characteristics{
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.characteristics.visible {
+    max-height: 500px; 
+    transition: max-height 0.5s ease-in;
+}
+
+.right-section{
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.price {
+    font-size: 16px !important;
+    font-weight: bold;
+    color: #333;
+    padding-left: 10px;
+}
+
+.button_basket {
+    width: 130px;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px 20px;
+    color: #70c05b; 
+    text-align: center;
+    border: 1px solid #70c05b;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #f0f0f0;  
+}
+
+.button_basket:hover {
+    border: 1px solid #ff6633;
+    background-color: #ff6633; 
+    color: #fff; 
+}
+
+.button_basket:active {
+    transform: scale(0.95); 
+}
+
+.empty{
+    margin-left: 25px;
+    width: 130px;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    background-color: #ffffff; 
+    border: 1px solid #d3d3d3; 
+    padding: 8px 12px;
+}
+
+.product_input {
+    padding: 10px 15px;
+    width: 180px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s ease;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.product_input:focus {
+    border-color: #f7b37f;
+    box-shadow: 0 0 0 3px rgba(247, 179, 127, 0.2);
+}
+
+.product_input::placeholder {
+    color: #999;
+}
+
+.product_btn {
+    padding: 8px 12px;
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #f7b37f;
+    border: 1px solid #f7b37f;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.product_btn:hover {
+    background-color: #ff8c5a;
+    border-color: #ff8c5a;
+    box-shadow: 0 2px 8px rgba(247, 179, 127, 0.3);
+}
+
+.product_btn:active {
+    transform: scale(0.98);
+}
+
+.product_btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(247, 179, 127, 0.3);
+}
+
+/* копирование ариткула */
+.copy-icon-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 8px;
+    cursor: pointer;
+    color: #666;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.copy-icon-btn:hover {
+    color: #000;
+}
+
+.copy-icon-btn.copied i {
+    color: green;
+}
+
+.product_p{
+    text-align: justify;    
+  line-height: 1.5;      
+  word-wrap: break-word;  
+  hyphens: auto;          
+  margin: 0 auto;        
+  padding: 3px 10px; 
+}

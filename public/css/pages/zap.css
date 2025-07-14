@@ -1,0 +1,151 @@
+/* для запчастей */  
+.container_zap {
+    text-align: left;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+    gap: 20px;
+}
+.product {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #f0efef;
+    border-radius: 10px;    
+    transition: transform 0.3s ease;
+    margin-top: 0;
+}
+.product:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; 
+}
+.product form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.div_katalog {
+    float: left;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-right: 20px;
+}
+.div_katalog img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+}
+.product-info {
+    margin: 15px 0;
+}
+
+.button_podrobnee{
+    position: absolute;
+    width: 90px;
+    height: auto;
+    padding: 10px; 
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000; 
+    text-align: center;    
+    margin-top: 10px;
+    right: 45px; 
+    bottom: 10px;
+}
+
+.button-container{
+    position: absolute; 
+    right: 150px; 
+    bottom: 90px;
+}
+.empty{
+    width: 130px;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 5px 0px;
+    text-align: center;
+    background-color: #f0f0f0; 
+}
+.button_trash {
+    width: 130px;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px 20px;
+    color: #70c05b; 
+    text-align: center;
+    border: 1px solid #70c05b;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #f0f0f0;  
+}
+
+.button_trash:hover {
+    border: 1px solid #ff6633;
+    background-color: #ff6633; 
+    color: #fff; 
+}
+
+.button_trash:active {
+    transform: scale(0.95); 
+}
+
+.price {
+    font-size: 16px !important;
+    font-weight: bold;
+    color: #333;
+}
+.h1_category{
+    text-align: center;
+}
+
+/* копирование ариткула */
+.copy-icon-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 8px;
+    cursor: pointer;
+    color: #666;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.copy-icon-btn:hover {
+    color: #000;
+}
+
+.copy-icon-btn.copied i {
+    color: green;
+}
+
+
+/* Для прокрутки вверх  */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; 
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+    font-size: 24px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center; 
+    line-height: 50px; 
+}
+
+.scroll-to-top:hover {
+    background-color: #ff6633; 
+}
