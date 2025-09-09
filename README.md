@@ -8,7 +8,7 @@ Laravel — это веб-фреймворк с выразительным и э
 
 - [Простой и быстрый роутинг](https://laravel.com/docs/routing).
 - [Мощный контейнер внедрения зависимостей](https://laravel.com/docs/container).
-- Выразительный, интуитивно понятный [ORM для работы с базой данных Eloquent](https://laravel.com/docs/eloquent).
+- [ORM для работы с базой данных Eloquent](https://laravel.com/docs/eloquent).
 - [Агностические к БД миграции схемы](https://laravel.com/docs/migrations).
 - [Надежная обработка фоновых заданий через очереди](https://laravel.com/docs/queues).
 
@@ -86,4 +86,5 @@ Laravel — это веб-фреймворк с выразительным и э
 Запустите встроенный сервер разработки Laravel:
 ```bash
 php artisan serve
+
 
