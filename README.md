@@ -27,8 +27,8 @@ Laravel — это веб-фреймворк с выразительным и э
 
 1.  **Клонируйте репозиторий**
     ```bash
-    git clone https://github.com/your-username/your-project-name.git
-    cd your-project-name
+    git clone https://github.com/keskiyo/Laravel_shop.git
+    cd Laravel_shop
     ```
 
 2.  **Установите PHP-зависимости через Composer**
@@ -86,3 +86,4 @@ Laravel — это веб-фреймворк с выразительным и э
 Запустите встроенный сервер разработки Laravel:
 ```bash
 php artisan serve
+
